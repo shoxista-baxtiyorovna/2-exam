@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{ article.title | title }} - Astrum IT Academy H4ck3rs{% endblock %}
+
+{% block content %}
+
+        <article class="post-content">
+            <div class="post-meta">
+                <span>Author: {{ article.author }}</span>
+                <span>Date: {{ article.publish_time }}</span>
+            </div>
+            <h1>{{ article.title | title }}</h1>
+            <p>{{ article.long_content }}</p>
+        </article>
+
+{% endblock %}
